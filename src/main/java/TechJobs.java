@@ -123,9 +123,9 @@ public class TechJobs {
 //        System.out.println("printJobs is not implemented yet");
 
         if(someJobs.isEmpty()) {
-            System.out.print("No Results");
+            System.out.print("No Results"); //if inputted value does not match a valid value
         } else {
-            for (int i = 0; i < someJobs.size(); i++) {
+            for (int i = 0; i < someJobs.size(); i++) { //adds info format to meet test's standards
                 System.out.println("\n*****");
                 for (Map.Entry<String, String> job : someJobs.get(i).entrySet()) {
                     System.out.println(job.getKey() + ": " + job.getValue());
